@@ -44,6 +44,7 @@ expensesItemBtn.addEventListener('click', () => {
                 sum += +expensesMoneyAnswer;
             }  else{
                 i = i - 1;
+                alert('не делай так)')
             };
     }
     expensesValue.textContent = sum;
@@ -68,7 +69,6 @@ countBudgetBtn.addEventListener('click', () => {
     }
 });
 optionalExpensesBtn.addEventListener('click', () => {
-
     for(let i = 0; i < optionalExpensesItem.length; i++ ){
         let optionalExpensesAnswer = optionalExpensesItem[i].value;
             appData.optionalExpenses[i] = optionalExpensesAnswer;
